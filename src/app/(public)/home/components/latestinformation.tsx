@@ -36,7 +36,7 @@ const LatestInformation = () => {
           </h2>
           <a
             href="#"
-            className="text-[#009C3E] text-[11.4px] font-[500]"
+            className="text-[#009C3E] text-[11.4px] font-[500] no-underline"
           >
             VIEW ALL
           </a>

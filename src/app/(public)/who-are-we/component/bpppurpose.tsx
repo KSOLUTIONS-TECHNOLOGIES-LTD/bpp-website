@@ -23,18 +23,18 @@ const purposes = [
 
 export default function BppPurpose() {
   return (
-    <section className="w-full bg-white py-12 px-4 md:px-16 plus">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-2 md:gap-12">
+    <section className="w-full bg-white pt-24 pb-10 px-4 md:px-22 plus">
+      <div className="flex flex-col md:flex-row justify-between">
         
         {/* Left Text */}
-        <div className="flex-1">
-          <h2 className="text-4xl md:text-[50px] font-[600] text-gray-900 mb-6 leading-[30px] md:leading-[55px]">
+        <div className="w-full md:w-1/2">
+          <h2 className="text-4xl md:text-[42px] font-[600] text-gray-900 mb-6 leading-[30px] md:leading-[45px]">
             The Bureau of Public Procurement was <span className="text-black">establish</span> for
           </h2>
 
           <ul className="space-y-5 text-gray-700 text-sm md:text-base">
             {purposes.map((item, idx) => (
-              <li key={idx} className="flex items-center gap-3">
+              <li key={idx} className="flex items-start gap-3">
                 <img
                   src={item.icon}
                   alt={`icon-${idx + 1}`}
@@ -42,20 +42,20 @@ export default function BppPurpose() {
                   height={24}
                   className="mt-1 w-6 h-6"
                 />
-                <p className="text-[16.2px] font-[400] leading-[27px]">{item.text}</p>
+                <p className="text-[15px] font-[400] leading-[27px]">{item.text}</p>
               </li>
             ))}
           </ul>
         </div>
 
         { /*Image */ }
-        <div className="flex-1">
+        <div className="">
           <img
             src="/public/assets/images/bppimg2.png"
             alt="Public Procurement Illustration"
             width={600}
             height={400}
-            className="w-full h-auto"
+            className="w-full h-auto md:w-[400px]"
           />
         </div>
       </div>

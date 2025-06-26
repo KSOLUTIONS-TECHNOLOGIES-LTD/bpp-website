@@ -47,7 +47,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className='flex justify-between items-center mb-6 md:mb-12'>
             <div className="">
-            <h1 className="text-[20px] md:text-[55px] font-[700] text-green-600">Bureau of Public Procurement</h1>
+            <h1 className="text-[20px] md:text-[50px] font-[700] text-green-600">Bureau of Public Procurement</h1>
             </div>
 
             <div className="flex gap-4 mt-6 text-gray-300">
@@ -94,11 +94,11 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm gap-3">
-          <p className='text-[11px] font-[700]'>
-            <span className="text-green-500 font-semibold">© Copyright 2025</span>, All rights reserved | Bureau of Public Procurement
+          <p className='text-[11px] font-[500] uppercase'>
+            <span className="text-green-500 font-[600] uppercase">© Copyright 2025</span>, All rights reserved | Bureau of Public Procurement
           </p>
-          <p className="text-gray-400 text-[11px] font-[500]">
-            <span className="text-green-500">Powered by</span> - TECHSPECIALIST CONSULTING LIMITED
+          <p className="text-white text-[11px] font-[500]">
+            <span className="text-green-500 uppercase font-[600]">Powered by</span> - TECHSPECIALIST CONSULTING LIMITED
           </p>
         </div>
 

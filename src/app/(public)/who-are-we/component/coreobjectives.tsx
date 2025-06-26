@@ -21,9 +21,9 @@ const objectives = [
 
 export default function CoreObjectives() {
   return (
-    <section className="w-full bg-white pt-6 pb-12 md:pb-16 px-4 md:px-16 plus">
+    <section className="w-full bg-white pt-6 pb-12 md:pb-24 px-4 md:px-24 plus">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-[48px] font-[700] text-gray-800 mb-10 leading-[58px]">
+        <h2 className="text-3xl md:text-[40px] font-[700] text-gray-800 mb-6 leading-[58px]">
           Our Core Objectives
         </h2>
 
@@ -31,7 +31,7 @@ export default function CoreObjectives() {
           {objectives.map((obj, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl shadow-2xl p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
+              className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition border border-gray-200"
             >
               <img
                 src={obj.icon}

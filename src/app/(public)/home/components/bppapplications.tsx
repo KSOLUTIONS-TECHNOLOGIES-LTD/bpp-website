@@ -5,7 +5,7 @@ const apps = [
   { title: 'CCSP', image: '/assets/images/bppimg.png' },
   { title: 'POCR', image: '/assets/images/bppimg.png' },
   { title: 'POMS', image: '/assets/images/bppimg.png' },
-  { title: 'NOCOP0', image: '/assets/images/bppimg.png' },
+  { title: 'NOCOPO', image: '/assets/images/bppimg.png' },
   { title: 'PRICE CHECKER', image: '/assets/images/bppimg.png' },
   { title: 'CCSP', image: '/assets/images/bppimg.png' },
 ];
@@ -14,7 +14,7 @@ export default function BppApplications() {
   return (
     <section className="py-16 px-4 bg-white text-center plus">
       {/* Heading */}
-      <h2 className="text-[35px] md:text-[50px] font-[600] mb-4">BPP Applications</h2>
+      <h2 className="text-[35px] md:text-[50px] font-[600] mb-4 text-[#131313]">BPP Applications</h2>
       <p className="text-[13px] text-[#131313] max-w-2xl mx-auto mb-10 font-[500] leading-[22px]">
         BPP HAS A VARIETY OF APPLICATIONS WHICH HAVE TRANSFORMED THE REGISTRATION
         PROCESS FOR MOST OF HER PROCUREMENT PROCEDURES.
@@ -27,7 +27,7 @@ export default function BppApplications() {
             key={index}
             className="group bg-[#F4FAF5] p-4 rounded-lg flex flex-col hover:border hover:border-green-700"
           >
-            <p className="mt-2 text-[24px] font-[700] text-[#161C2D] mb-2">{app.title}</p>
+            <p className="mt-2 text-[24px] font-[500] text-[#161C2D] mb-2">{app.title}</p>
 
             {/* image Wrapper */}
             <div className="relative w-full h-[200px] rounded-lg shadow overflow-hidden">

@@ -27,8 +27,8 @@ export default function DocumentSection() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-2 max-w-2xl mx-auto mb-10">
         <input
           type="text"
-          placeholder="Search for related document |"
-          className="w-full px-4 py-3 border border-gray-300 rounded-md outline-none"
+          placeholder="Search for related document"
+          className="w-full px-4 py-3 border border-gray-100 rounded-md outline-none bg-white text-black"
         />
         <button className="bg-[#108A00] text-white px-6 py-3 rounded-md flex items-center gap-2 hover:bg-green-700 transition">
           SEARCH
@@ -52,8 +52,8 @@ export default function DocumentSection() {
       </div>
 
       {/* CTA Button */}
-      <div className="mt-12 flex justify-center">
-        <button className="bg-[#108A00] text-white px-20 py-3 rounded-md text-[20px] font-[600] flex items-center gap-2 hover:bg-green-700 transition">
+      <div className="mt-16 flex justify-center">
+        <button className="bg-[#108A00] text-white px-20 py-4 rounded-sm text-[20px] font-[500] flex items-center gap-2 hover:bg-green-700 transition">
           Access all document
           <NorthEastIcon fontSize="small" />
         </button>
