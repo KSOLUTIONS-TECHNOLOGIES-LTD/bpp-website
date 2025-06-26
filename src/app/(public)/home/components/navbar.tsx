@@ -30,7 +30,7 @@ export default function Navbar() {
         { label: 'DGS Corner', href: '/dgscorner' },
         { label: 'Vision', href: '/who-we-are/structure' },
         { label: 'Mission', href: '/who-we-are/structure' },
-        { label: 'Function of the Bureau', href: '/who-we-are/structure' },
+        { label: 'Function of the Bureau', href: '/FunctionsOfTheBureau' },
       ]
     },
     {
@@ -52,7 +52,7 @@ export default function Navbar() {
        submenu: true,
       items: [
         { label: 'Petition Submission', href: '/petition' },
-        { label: 'Petition Summary', href: '/applications/status' },
+        { label: 'Petition Summary', href: '/PetitionSummary' },
         
       ] },
 
