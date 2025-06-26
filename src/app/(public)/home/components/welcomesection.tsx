@@ -1,6 +1,6 @@
 'use client';
 
-// import Image from 'next/image';
+
 import React from 'react';
 import { Link } from 'react-router';
 import NorthEastIcon from '@mui/icons-material/NorthEast';
@@ -30,16 +30,18 @@ const WelcomeSection = () => {
             </p>
           </div>
 
-          <button className="mt-4 bg-[#108A00] hover:bg-green-700 text-white px-8 py-4 rounded shadow transition text-[11px] font-[600] plus flex flex-row gap-2">
+          <Link to="/dgscorner" className="no-underline">
+          <button className="mt-4 bg-[#108A00] hover:bg-green-700 text-white px-8 py-4 rounded shadow transition text-[11px] font-[600] plus flex flex-row gap-2 ">
             ACCESS DG'S CORNER
             <NorthEastIcon fontSize="small" className='text-sm'/>
           </button>
+          </Link>
         </div>
 
         {/* Right Section */}
         <div className="flex justify-center md:justify-end w-full md:w-3/5">
           <div >
-            <Link to="/dgscorner">
+            
             <img
               src="/public/assets/images/DG.png" 
               alt="Dr. Adebowale A. Adedokun"
@@ -47,7 +49,7 @@ const WelcomeSection = () => {
               height={400}
               className="mx-auto mb-4 w-[500px]"
             />
-            </Link>
+            
           </div>
         </div>
       </div>

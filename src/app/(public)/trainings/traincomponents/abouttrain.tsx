@@ -8,11 +8,11 @@ const Abouttrain: FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/public/assets/images/trainingimg2.png"
+          src="/public/assets/images/training.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute bg-blue-900/40 inset-0 bg-opacity-60" />
+        <div className="absolute bg-black/50 inset-0 bg-opacity-60" />
       </div>
 
       {/* Content */}

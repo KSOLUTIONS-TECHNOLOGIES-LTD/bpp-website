@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import SearchIcon from '@mui/icons-material/Search';
@@ -30,7 +31,7 @@ export default function Navbar() {
         { label: 'DGS Corner', href: '/dgscorner' },
         { label: 'Vision', href: '/who-we-are/structure' },
         { label: 'Mission', href: '/who-we-are/structure' },
-        { label: 'Function of the Bureau', href: '/who-we-are/structure' },
+        { label: 'Function of the Bureau', href: '/FunctionsOfTheBureau' },
       ]
     },
     {
@@ -38,7 +39,7 @@ export default function Navbar() {
       href: '/applications',
       submenu: true,
       items: [
-        { label: 'Background', href: '/applications' },
+        { label: 'All Applications', href: '/applications' },
         { label: 'Contractor Consultant Service Provider', href: '/contractor' },
         { label: 'Procurement Officer Conversion Registration', href: '/applications/status' },
         { label: 'Procurement Officer Management Database', href: '/applications/renewal' },
@@ -52,7 +53,7 @@ export default function Navbar() {
        submenu: true,
       items: [
         { label: 'Petition Submission', href: '/petition' },
-        { label: 'Petition Summary', href: '/applications/status' },
+        { label: 'Petition Summary', href: '/PetitionSummary' },
         
       ] },
 

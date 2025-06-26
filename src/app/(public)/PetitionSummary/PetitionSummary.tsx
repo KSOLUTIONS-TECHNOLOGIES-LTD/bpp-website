@@ -33,7 +33,7 @@ const PetitionSummary: React.FC = () => {
             download
           >
             <div
-              className="h-16 w-16 mx-auto bg-center bg-no-repeat bg-contain mb-4"
+              className="h-16 w-16 mx-auto bg-center bg-no-repeat bg-contain mb-4 "
               style={{ backgroundImage: "url('/assets/images/pdfs.png')" }}
             />
             <p className="text-2xl md:text-[15px] font-bold text-gray-800 no-underline  uppercase">{petition.title}</p>

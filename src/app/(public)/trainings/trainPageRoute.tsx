@@ -1,6 +1,6 @@
 import { FuseRouteItemType } from '@fuse/utils/FuseUtils';
 import authRoles from '@auth/authRoles';
-import Trainpage from './trainpage';
+import Trainpage from './trainPage';
 
 
 /**

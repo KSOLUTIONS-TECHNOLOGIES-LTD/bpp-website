@@ -55,11 +55,11 @@ export default function FunctionsOfTheBureau() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/public/assets/images/functinss.jpg"
+          src="/public/assets/images/functions.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute bg-blue-900/40 inset-0 bg-opacity-60" />
+        <div className="absolute bg-black/60 inset-0 bg-opacity-60" />
       </div>
 
       {/* Content */}

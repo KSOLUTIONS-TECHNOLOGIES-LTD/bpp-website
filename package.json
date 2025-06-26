@@ -50,10 +50,10 @@
     "perfect-scrollbar": "1.5.6",
     "prismjs": "1.30.0",
     "qs": "6.14.0",
-    "react": "19.1.0",
+    "react": "^19.1.0",
     "react-app-alias": "2.2.2",
     "react-autosuggest": "10.1.0",
-    "react-dom": "19.1.0",
+    "react-dom": "^19.1.0",
     "react-hook-form": "7.56.0",
     "react-i18next": "15.4.1",
     "react-popper": "2.3.0",
@@ -69,15 +69,7 @@
     "zod": "3.24.3"
   },
   "peerDependencies": {
-    "postcss": "8.5.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
-  },
-  "overrides": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "redux": "^5.0.1",
-    "semver": "7.5.4"
+    "postcss": "8.5.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
@@ -124,7 +116,7 @@
     "lint": "eslint ./src --config ./eslint.config.mjs",
     "lint:fix": "eslint --fix ./src --config ./eslint.config.mjs",
     "preview": "vite preview",
-    "build-docs": "npx tsx  \"./src/app/(public)/documentation/material-ui-components/utils/build.ts\"",
+    "build-docs": "npx tsx \"./src/app/(public)/documentation/material-ui-components/utils/build.ts\"",
     "postinstall": "node src/utils/node-scripts/fuse-react-message.js",
     "poststart": "node src/utils/node-scripts/fuse-react-message.js",
     "audit": "npm audit --production"
