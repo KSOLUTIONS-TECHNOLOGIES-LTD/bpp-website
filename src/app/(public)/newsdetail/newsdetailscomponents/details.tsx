@@ -7,7 +7,7 @@ interface ArticleSectionProps {
 
 const ArticleSection: React.FC<ArticleSectionProps> = () => {
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-800 pt-[9rem] plus pb-16">
+    <div className="min-h-screen bg-white font-sans text-gray-800 pt-[9rem] plus pb-16 plus">
       
 
       <div className="container mx-auto px-4 pt-4 md:px-6 lg:px-8 max-w-4xl">
@@ -115,7 +115,7 @@ const ArticleSection: React.FC<ArticleSectionProps> = () => {
 Meanwhile, in a post-symposium interview by journalists, Adedokun said that the government of President Tinubu through the BPP would reduce bureaucracy in procurement by going digital.</p>
 
 <p className=" text-[16px]">According to him, “We are going to do it in such a way that it grows from small, medium scale to massive projects. So that is the way to go: to make sure that across the entire country, opportunities are created to do business.
-“This is the time to grow our local ind</p>
+“This is the time to grow our local industry.</p>
           
         </div>
       </div>

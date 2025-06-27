@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 const Apps: FC = () => {
   return (
-    <section className="relative w-full h-[93vh] flex items-center justify-center text-center text-white pt-28 md:pt-30">
+    <section className="relative w-full h-[85vh] flex items-center justify-center text-center text-white pt-28 md:pt-30">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img

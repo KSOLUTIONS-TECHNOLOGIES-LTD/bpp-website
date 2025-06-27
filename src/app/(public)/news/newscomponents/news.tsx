@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router';
 import TuneIcon from '@mui/icons-material/Tune';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -97,6 +97,8 @@ const NewsAndBlogsSection: React.FC = () => {
 
         {/* Top News */}
         <h2 className="text-2xl font-semibold mb-6 border-b border-gray-200 pb-2">Top News</h2>
+
+        <Link to="/newsdetail" className='no-underline'>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {topNews.map((article) => (
             <div key={article.id} className="bg-white rounded-lg border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
@@ -120,6 +122,7 @@ const NewsAndBlogsSection: React.FC = () => {
             </div>
           ))}
         </div>
+        </Link>
 
         {/* More Blogs */}
         <div className="flex items-center justify-between mb-6 border-b border-gray-200 pb-2">
