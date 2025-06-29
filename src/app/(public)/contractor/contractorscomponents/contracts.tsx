@@ -13,7 +13,7 @@ const ContractorSection: React.FC = () => {
         <div className='flex flex-col gap-6'>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="/public/assets/images/trainingimg.png"
+            src="/assets/images/trainingimg.png"
             alt="Consult 1"
             width={200}
             height={200}
@@ -22,7 +22,7 @@ const ContractorSection: React.FC = () => {
         </div>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="/public/assets/images/contractimg2.png"
+            src="/assets/images/contractimg2.png"
             alt="Consult 2"
             width={200}
             height={200}
@@ -34,7 +34,7 @@ const ContractorSection: React.FC = () => {
         <div className='flex flex-col gap-6 mt-8'>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="/public/assets/images/contractimg1.png"
+            src="/assets/images/contractimg1.png"
             alt="Consult 3"
             width={200}
             height={200}
@@ -43,7 +43,7 @@ const ContractorSection: React.FC = () => {
         </div>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="/public/assets/images/contractimg3.png"
+            src="/assets/images/contractimg3.png"
             alt="Consult 4"
             width={200}
             height={200}

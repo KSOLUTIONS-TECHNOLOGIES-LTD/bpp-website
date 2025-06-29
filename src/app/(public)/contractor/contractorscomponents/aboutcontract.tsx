@@ -8,7 +8,7 @@ const AboutContract: FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/public/assets/images/contractor.png"
+          src="/assets/images/contractor.png"
           alt="Background"
           className="w-full h-full object-cover"
         />

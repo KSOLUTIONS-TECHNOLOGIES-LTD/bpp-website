@@ -55,7 +55,7 @@ export default function FunctionsOfTheBureau() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/public/assets/images/functions.png"
+          src="/assets/images/functions.png"
           alt="Background"
           className="w-full h-full object-cover"
         />

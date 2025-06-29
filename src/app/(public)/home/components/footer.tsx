@@ -51,11 +51,11 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-4 mt-6 text-gray-300">
-          <img src="/public/assets/images/instagram.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
-          <img src="/public/assets/images/twitter.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
-          <img src="/public/assets/images/facebook.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
-          <img src="/public/assets/images/linkedin.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
-          <img src="/public/assets/images/youtube.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+          <img src="/assets/images/instagram.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+          <img src="/assets/images/twitter.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+          <img src="/assets/images/facebook.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+          <img src="/assets/images/linkedin.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+          <img src="/assets/images/youtube.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
         </div>
         </div>
         {/* Top  */}

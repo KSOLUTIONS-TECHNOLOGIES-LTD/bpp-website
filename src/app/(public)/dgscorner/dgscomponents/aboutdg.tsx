@@ -34,7 +34,7 @@ const AboutDgSection = () => {
         <div className="flex justify-center md:justify-end w-full md:w-3/5">
           <div >
             <img
-              src="/public/assets/images/DG.png" 
+              src="/assets/images/DG.png" 
               alt="Dr. Adebowale A. Adedokun"
               width={300}
               height={400}

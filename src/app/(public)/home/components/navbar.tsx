@@ -43,7 +43,7 @@ export default function Navbar() {
         { label: 'Contractor Consultant Service Provider', href: '/contractor' },
         { label: 'Procurement Officer Conversion Registration', href: '/applications/status' },
         { label: 'Procurement Officer Management Database', href: '/applications/renewal' },
-        { label: 'Nieria Open Contracting Portal', href: '/applications/renewal' },
+        { label: 'Nigeria Open Contracting Portal', href: '/applications/renewal' },
         { label: 'Price Checker Portal', href: '/applications/renewal' },
         { label: 'Submission Portal', href: '/applications/renewal' },
       ]
@@ -59,7 +59,7 @@ export default function Navbar() {
 
 
     { label: 'Trainings',
-       href: '#', 
+       href: 'trainings', 
        submenu: true, 
        highlight: true,
       items: [

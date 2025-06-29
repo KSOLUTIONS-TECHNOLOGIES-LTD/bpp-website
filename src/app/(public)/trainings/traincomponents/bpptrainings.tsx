@@ -9,7 +9,7 @@ const BPPTrainingSection = () => {
         {/* Left: Image */}
         <div className="w-full md:w-1/2">
           <img
-            src="/public/assets/images/trainingimg.png" 
+            src="/assets/images/trainingimg.png" 
             alt="BPP Training"
             // width={600}
             // height={500}

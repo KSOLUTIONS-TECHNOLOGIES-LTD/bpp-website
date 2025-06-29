@@ -19,7 +19,7 @@ interface Article {
 const topNews: Article[] = [
   {
     id: 'tn1',
-    imageSrc: '/public/assets/images/newsimg1.png',
+    imageSrc: '/assets/images/newsimg1.png',
     category: 'National Accord',
     title: 'Hold us responsible if FG fails to deliver roads, other projects due to procurement lapses',
     description: 'May 12, 2025',
@@ -27,7 +27,7 @@ const topNews: Article[] = [
   },
   {
     id: 'tn2',
-    imageSrc: '/public/assets/images/newsimg3.png',
+    imageSrc: '/assets/images/newsimg3.png',
     category: 'PeoplesDaily',
     title: 'BPP, PCNGI partner on clean energy transition',
     description: 'May 08, 2025',
@@ -35,7 +35,7 @@ const topNews: Article[] = [
   },
   {
     id: 'tn3',
-    imageSrc: '/public/assets/images/newsimg2.png',
+    imageSrc: '/assets/images/newsimg2.png',
     category: 'PromptNews',
     title: 'BPP: Adedokun Adebowale\'s silent revolution to reform procurement',
     description: 'May 07, 2025',
@@ -46,7 +46,7 @@ const topNews: Article[] = [
 const moreBlogs: Article[] = [
   {
     id: 'mb1',
-    imageSrc: '/public/assets/images/newsimg1.png',
+    imageSrc: '/assets/images/newsimg1.png',
     category: 'National Accord',
     title: 'Hold us responsible if FG fails to deliver roads, other projects due to procurement lapses',
     description: 'May 12, 2025',
@@ -54,7 +54,7 @@ const moreBlogs: Article[] = [
   },
   {
     id: 'mb2',
-    imageSrc: '/public/assets/images/newsimg2.png',
+    imageSrc: '/assets/images/newsimg2.png',
     category: 'PeoplesDaily',
     title: 'BPP, PCNGI partner on clean energy transition',
     description: 'May 08, 2025',
@@ -62,7 +62,7 @@ const moreBlogs: Article[] = [
   },
   {
     id: 'mb3',
-    imageSrc: '/public/assets/images/newsimg3.png',
+    imageSrc: '/assets/images/newsimg3.png',
     category: 'PromptNews',
     title: 'BPP: Adedokun Adebowale\'s silent revolution to reform procurement',
     description: 'May 07, 2025',

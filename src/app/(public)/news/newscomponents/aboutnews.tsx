@@ -8,7 +8,7 @@ const Aboutnews: FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/public/assets/images/news4.png"
+          src="/assets/images/news4.png"
           alt="Background"
           className="w-full h-full object-cover"
         />

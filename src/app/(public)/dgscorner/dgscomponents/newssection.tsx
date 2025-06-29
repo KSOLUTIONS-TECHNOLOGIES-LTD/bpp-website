@@ -8,19 +8,19 @@ const news = [
     title: 'Hold us responsible if FG fails to deliver roads, other projects due to procurement lapses',
     category: 'Technical Report',
     date: 'May 19, 2025',
-    image: '/public/assets/images/newsimg1.png',
+    image: '/assets/images/newsimg1.png',
   },
   {
     title: 'BPP, PCNQI partner on clean energy transition',
     category: 'Project Activity',
     date: 'May 18, 2025',
-    image: '/public/assets/images/newsimg2.png',
+    image: '/assets/images/newsimg2.png',
   },
   {
     title: "BPP: Adesokun Adebowale's silent revolution to reform procurement",
     category: 'Procurement Reform',
     date: 'May 17, 2025',
-    image: '/public/assets/images/newsimg2.png',
+    image: '/assets/images/newsimg2.png',
   },
 ];
 

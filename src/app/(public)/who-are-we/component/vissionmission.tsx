@@ -8,7 +8,7 @@ const VisionMission: FC = () => {
       {/* Left Image */}
       <div className="w-full md:w-1/3 h-64 md:h-[600px] relative">
         <img
-          src="/public/assets/images/missionimg.png" 
+          src="/assets/images/missionimg.png" 
           alt="Vision and Mission Background"
           className="w-full h-full object-cover object-center"
         />

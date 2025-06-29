@@ -19,7 +19,7 @@ const ContactSection = () => {
         {/* Contact Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 items-center text-center mb-8 max-w-3xl mx-auto">
           <div className='flex gap-4 items-center'>
-            <img src="/public/assets/images/contacticon.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+            <img src="/assets/images/contacticon.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
             <div>
               <p className="font-semibold text-left mb-4 text-[19px]">Opening Hours</p>
               <p className="text-gray-600 text-[16px]">8:00AM - 5:00PM</p>

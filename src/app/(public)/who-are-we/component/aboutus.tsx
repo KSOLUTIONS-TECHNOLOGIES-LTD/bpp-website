@@ -8,7 +8,7 @@ const WhoWeAre: FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/public/assets/images/BG.png"
+          src="/assets/images/BG.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
