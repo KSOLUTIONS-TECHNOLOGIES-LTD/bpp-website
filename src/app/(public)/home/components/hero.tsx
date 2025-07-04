@@ -57,7 +57,7 @@ export default function HeroSection() {
 
   return (
     <section className="w-full bg-white px-4 sm:px-8 md:px-24 pt-[9rem] h-[96.5vh] plus">
-      <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-2">
         <div className="w-full md:w-1/2">
           {current === 0 ? (
             <div className="mb-6">

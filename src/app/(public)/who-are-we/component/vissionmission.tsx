@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 const VisionMission: FC = () => {
   return (
-    <section className="flex flex-col md:flex-row w-full bg-gray-100 gap-10 md:gap-20 plus">
+    <section className="flex flex-col md:flex-row w-full bg-gray-100 gap-2 md:gap-20 plus">
       {/* Left Image */}
       <div className="w-full md:w-1/3 h-64 md:h-[600px] relative">
         <img
