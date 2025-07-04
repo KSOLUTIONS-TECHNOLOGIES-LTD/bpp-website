@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client';
 import { useState, useEffect } from 'react';
 // import Image from "next/image";
@@ -56,33 +57,35 @@ export default function HeroSection() {
 		setCurrent((prev) => (prev + 1) % slides.length);
 	};
 
-	return (
-		<section className="w-full bg-white px-4 sm:px-8 md:px-24 pt-[9rem] h-[96.5vh] plus">
-			<div className="flex flex-col md:flex-row justify-between items-center">
-				<div className="w-full md:w-1/2">
-					{current === 0 ? (
-						<div className="mb-6">
-							<h1 className="text-3xl md:text-[50px] font-[600] text-black">{slides[0].title}</h1>
-							<h2 className="text-4xl md:text-[60px] font-[600] text-[#108A00] mt-1 leading-[30px] md:leading-[50px]">
-								{slides[0].description}
-							</h2>
-						</div>
-					) : (
-						<>
-							<h1 className="text-4xl md:text-[60px] font-[600] text-[#108A00] md-2 md:mb-6 leading-[30px] md:leading-[60px]">
-								{slides[current].title}
-							</h1>
-							{slides[current].description && (
-								<p className="text-[20px] md:text-[28px] font-[500] text-black mb-2 md:mb-6 leading-[25px] md:leading-[40px]">
-									{slides[current].description}
-								</p>
-							)}
-						</>
-					)}
-					<button className="bg-green-700 text-white px-6 py-2 md:py-4 rounded hover:bg-green-800 transition">
-						{slides[current].buttonText}
-					</button>
-				</div>
+  return (
+    <section className="w-full bg-white px-4 sm:px-8 md:px-24 pt-[9rem] h-[96.5vh] plus">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-2">
+        <div className="w-full md:w-1/2">
+          {current === 0 ? (
+            <div className="mb-6">
+              <h1 className="text-3xl md:text-[50px] font-[600] text-black">
+                {slides[0].title}
+              </h1>
+              <h2  className="text-4xl md:text-[60px] font-[600] text-[#108A00] mt-1 leading-[30px] md:leading-[50px]">
+                {slides[0].description}
+              </h2>
+            </div>
+          ) : (
+            <>
+              <h1  className="text-4xl md:text-[60px] font-[600] text-[#108A00] md-2 md:mb-6 leading-[30px] md:leading-[60px]">
+                {slides[current].title}
+              </h1>
+              {slides[current].description && (
+                <p  className="text-[20px] md:text-[28px] font-[500] text-black mb-2 md:mb-6 leading-[25px] md:leading-[40px]">
+                  {slides[current].description}
+                </p>
+              )}
+            </>
+          )}
+          <button  className="bg-green-700 text-white px-6 py-2 md:py-4 rounded hover:bg-green-800 transition">
+            {slides[current].buttonText}
+          </button>
+        </div>
 
 				<div className="relative w-full h-64 md:h-[400px] md:w-1/3">
 					<img
