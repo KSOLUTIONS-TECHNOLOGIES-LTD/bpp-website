@@ -11,28 +11,28 @@ const cardData = [
     highlight: 'Petition Submissions',
     subtitle: 'are currently online?',
     linkText: 'Submit Now',
-    bgImage: '/public/assets/images/frame1.png',
+    bgImage: '/assets/images/frame1.png',
   },
   {
     title: 'Are you a',
     highlight: 'Federal Government ?',
     subtitle: 'Contractor, Consultant or service provider',
     linkText: 'Register with Ease',
-    bgImage: '/public/assets/images/frame2.png',
+    bgImage: '/assets/images/frame2.png',
   },
   {
     title: 'Report any',
     highlight: 'suspicious procurement activity',
     subtitle: 'and get full backings of the bureau',
     linkText: 'Report here',
-    bgImage: '/public/assets/images/frame1.png',
+    bgImage: '/assets/images/frame1.png',
   },
   {
     title: 'Are you a',
     highlight: 'Procurement Officer?',
     subtitle: 'Update your profile now',
     linkText: 'Update your profile now',
-    bgImage: '/public/assets/images/frame2.png',
+    bgImage: '/assets/images/frame2.png',
   },
 ];
 

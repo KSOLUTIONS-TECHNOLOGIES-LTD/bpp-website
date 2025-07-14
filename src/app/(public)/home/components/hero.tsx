@@ -1,59 +1,61 @@
-"use client";
-import { useState, useEffect } from "react";
+/* eslint-disable prettier/prettier */
+'use client';
+import { useState, useEffect } from 'react';
 // import Image from "next/image";
 
 const slides = [
-  {
-    title: "Welcome to the",
-    description: "Bureau of Public Procurement",
-    image: "/public/assets/images/container.png",
-    buttonText: "Read More",
-    selectorLabel: "SUBMIT PETITION",
-  },
-  {
-    title: "Contractor Registration",
-    description: "Wish to register as a federal government contractor? You are one step away.",
-    image: "/public/assets/images/container-1.png",
-    buttonText: "Register",
-    selectorLabel: "CONTRACT REGISTRATION",
-  },
-  {
-    title: "Procurement Conversion Online Registration",
-    description: "Are you a procurement officer? Update your profile now",
-    image: "/public/assets/images/container-2.png",
-    buttonText: "Start Here",
-    selectorLabel: "PROCUREMENT OFFICE REGISTRATION",
-  },
-  {
-    title: "NOCOPO",
-    description: "Opening up Public Procurement in Nigeria through increased disclosure of procurements infromation.",
-    image: "/public/assets/images/container-1.png",
-    buttonText: "Click Here",
-    selectorLabel: "CONTRACTING PORTAL",
-  },
+	{
+		title: 'Welcome to the',
+		description: 'Bureau of Public Procurement',
+		image: '/assets/images/Container.png',
+		buttonText: 'Read More',
+		selectorLabel: 'SUBMIT PETITION'
+	},
+	{
+		title: 'Contractor Registration',
+		description: 'Wish to register as a federal government contractor? You are one step away.',
+		image: '/assets/images/container-1.png',
+		buttonText: 'Register',
+		selectorLabel: 'CONTRACT REGISTRATION'
+	},
+	{
+		title: 'Procurement Conversion Online Registration',
+		description: 'Are you a procurement officer? Update your profile now',
+		image: '/assets/images/container-2.png',
+		buttonText: 'Start Here',
+		selectorLabel: 'PROCUREMENT OFFICE REGISTRATION'
+	},
+	{
+		title: 'NOCOPO',
+		description:
+			'Opening up Public Procurement in Nigeria through increased disclosure of procurements infromation.',
+		image: '/assets/images/container-1.png',
+		buttonText: 'Click Here',
+		selectorLabel: 'CONTRACTING PORTAL'
+	}
 ];
 
 export default function HeroSection() {
-  const [current, setCurrent] = useState(0);
+	const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCurrent((prev) => (prev + 1) % slides.length);
+		}, 5000);
+		return () => clearInterval(interval);
+	}, []);
 
-  const handleManualSelect = (index: number) => {
-    setCurrent(index);
-  };
+	const handleManualSelect = (index: number) => {
+		setCurrent(index);
+	};
 
-  const goToPrevious = () => {
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+	const goToPrevious = () => {
+		setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+	};
 
-  const goToNext = () => {
-    setCurrent((prev) => (prev + 1) % slides.length);
-  };
+	const goToNext = () => {
+		setCurrent((prev) => (prev + 1) % slides.length);
+	};
 
   return (
     <section className="w-full bg-white px-4 sm:px-8 md:px-24 pt-[9rem] h-[96.5vh] plus">
@@ -85,48 +87,45 @@ export default function HeroSection() {
           </button>
         </div>
 
-        <div className="relative w-full h-64 md:h-[400px] md:w-1/3">
-          <img
-            src={slides[current].image}
-            alt={slides[current].title}
-            
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
+				<div className="relative w-full h-64 md:h-[400px] md:w-1/3">
+					<img
+						src={slides[current].image}
+						alt={slides[current].title}
+						className="w-full h-full object-cover"
+					/>
+				</div>
+			</div>
 
-      {/* Selector */}
-      <div className="flex items-center justify-center mt-10 gap-3">
-        <button
-          onClick={goToPrevious}
-          className="text-2xl transition"
-          aria-label="Previous"
-        >
-          ‹
-        </button>
+			{/* Selector */}
+			<div className="flex items-center justify-center mt-10 gap-3">
+				<button
+					onClick={goToPrevious}
+					className="text-2xl transition"
+					aria-label="Previous"
+				>
+					‹
+				</button>
 
-        {slides.map((slide, index) => (
-          <button
-            key={index}
-            onClick={() => handleManualSelect(index)}
-            className={`plus text-[9px] md:text-[10.5px] font-[500] px-4 py-2 border border-black/50 rounded-lg transition ${
-              current === index
-                ? "bg-green-700 text-white"
-                : "text-gray-700 hover:bg-gray-100"
-            }`}
-          >
-            {slide.selectorLabel}
-          </button>
-        ))}
+				{slides.map((slide, index) => (
+					<button
+						key={index}
+						onClick={() => handleManualSelect(index)}
+						className={`plus text-[9px] md:text-[10.5px] font-[500] px-4 py-2 border border-black/50 rounded-lg transition ${
+							current === index ? 'bg-green-700 text-white' : 'text-gray-700 hover:bg-gray-100'
+						}`}
+					>
+						{slide.selectorLabel}
+					</button>
+				))}
 
-        <button
-          onClick={goToNext}
-          className="text-2xl transition"
-          aria-label="Next"
-        >
-          ›
-        </button>
-      </div>
-    </section>
-  );
+				<button
+					onClick={goToNext}
+					className="text-2xl transition"
+					aria-label="Next"
+				>
+					›
+				</button>
+			</div>
+		</section>
+	);
 }

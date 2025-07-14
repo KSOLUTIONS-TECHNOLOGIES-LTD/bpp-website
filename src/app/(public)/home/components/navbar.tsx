@@ -79,7 +79,7 @@ export default function Navbar() {
       <div className="relative bg-[#1C3F3A] text-white py-2 text-sm font-semibold text-center">
         INFO@BPP.GOV.NG
         <a
-          href="https://www.pebee.gov.ng/reportgov-ng"
+          href="https://www.pebec.gov.ng/reportgov-ng"
           target="_blank"
           rel="noopener noreferrer"
           className="absolute right-4 top-1/2 -translate-y-1/2"
