@@ -3,9 +3,7 @@ import authRoles from '@auth/authRoles';
 import Newspage from './NewsPage';
 
 
-/**
- * Home page page route.
- */
+
 const NewsPageRoute: FuseRouteItemType = {
     path: '/news',
     element: <Newspage />,

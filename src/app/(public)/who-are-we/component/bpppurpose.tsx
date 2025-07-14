@@ -4,19 +4,19 @@
 
 const purposes = [
   {
-    icon: '/public/assets/images/one.png',
+    icon: '/assets/images/one.png',
     text: "The harmonization of existing government policies and practices on public procurement to ensure probity, accountability and transparency in the procurement process;"
   },
   {
-    icon: '/public/assets/images/two.png',
+    icon: '/assets/images/two.png',
     text: "The establishment of pricing standards and benchmarks;"
   },
   {
-    icon: '/public/assets/images/three.png',
+    icon: '/assets/images/three.png',
     text: "Ensuring the application of fair, competitive, transparent, value-for-money standards and practices for the procurement and disposal of public assets;"
   },
   {
-    icon: '/public/assets/images/four.png',
+    icon: '/assets/images/four.png',
     text: "The attainment of transparency, competitiveness, cost effectiveness and professionalism in the public sector procurement system."
   }
 ];
@@ -51,7 +51,7 @@ export default function BppPurpose() {
         { /*Image */ }
         <div className="">
           <img
-            src="/public/assets/images/bppimg2.png"
+            src="/assets/images/bppimg2.png"
             alt="Public Procurement Illustration"
             width={600}
             height={400}

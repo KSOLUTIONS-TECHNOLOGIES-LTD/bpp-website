@@ -8,7 +8,7 @@ const Apps: FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/public/assets/images/appimg2.png"
+          src="/assets/images/appimg2.png"
           alt="Background"
           className="w-full h-full object-cover"
         />

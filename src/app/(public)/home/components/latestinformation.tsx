@@ -31,7 +31,7 @@ const LatestInformation = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-[24px] font-[700] tracking-widest text-[#444444]">
+          <h2 className="text-[24px] font-[700] tracking-widest text-[#444444] plus">
             LATEST INFORMATION
           </h2>
           <a

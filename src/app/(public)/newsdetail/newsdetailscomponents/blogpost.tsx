@@ -14,21 +14,21 @@ interface BlogPost {
 const mockBlogPosts: BlogPost[] = [
   {
     id: '1',
-    imageUrl: '/public/assets/images/newsimg1.png',
+    imageUrl: '/assets/images/newsimg1.png',
     source: 'National Accord',
     title: 'Hold us responsible if FG fails to deliver roads, other projects due to procurement lapses',
     date: 'May 12, 2025',
   },
   {
     id: '2',
-    imageUrl: '/public/assets/images/newsimg2.png',
+    imageUrl: '/assets/images/newsimg2.png',
     source: 'PeoplesDaily',
     title: 'BPP, PCNGI partner on clean energy transition',
     date: 'May 08, 2025',
   },
   {
     id: '3',
-    imageUrl: '/public/assets/images/newsimg2.png',
+    imageUrl: '/assets/images/newsimg2.png',
     source: 'PromptNews',
     title: "BPP: Adedokun Adebowale's silent revolution to reform procurement",
     date: 'May 07, 2025',

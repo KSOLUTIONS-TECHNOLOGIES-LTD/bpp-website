@@ -43,7 +43,7 @@ const WelcomeSection = () => {
           <div >
             
             <img
-              src="/public/assets/images/DG.png" 
+              src="/assets/images/DG.png" 
               alt="Dr. Adebowale A. Adedokun"
               width={300}
               height={400}

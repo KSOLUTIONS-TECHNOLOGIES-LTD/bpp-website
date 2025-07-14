@@ -2,19 +2,19 @@
 
 const objectives = [
   {
-    icon: '/public/assets/images/container1.png',
+    icon: '/assets/images/container1.png',
     title: 'Economic Efficiency',
   },
   {
-    icon: '/public/assets/images/container2.png',
+    icon: '/assets/images/container2.png',
     title: 'Competition',
   },
   {
-    icon: '/public/assets/images/container3.png',
+    icon: '/assets/images/container3.png',
     title: 'Value for money',
   },
   {
-    icon: '/public/assets/images/container4.png',
+    icon: '/assets/images/container4.png',
     title: 'Transparency',
   },
 ];

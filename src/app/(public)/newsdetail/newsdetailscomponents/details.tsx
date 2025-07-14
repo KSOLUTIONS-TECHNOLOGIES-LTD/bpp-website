@@ -27,7 +27,7 @@ const ArticleSection: React.FC<ArticleSectionProps> = () => {
         
         <div className="flex flex-col sm:flex-row sm:items-center justify-between text-sm text-gray-600 mb-6 pb-4"> 
           <div className="flex items-center space-x-2 mb-2 sm:mb-0">
-            <img src="/public/assets/images/newsguy.png" alt="Logo" className="h-[17.5px] w-[17.5px]" />
+            <img src="/assets/images/newsguy.png" alt="Logo" className="h-[17.5px] w-[17.5px]" />
             <span className="font-semibold">By: Podent Princess</span>
             
             {/* <span className="hidden sm:inline-block">|</span> */}
@@ -41,26 +41,26 @@ const ArticleSection: React.FC<ArticleSectionProps> = () => {
           <div className="flex items-center space-x-3">
 
             <div className='flex items-center mr-6 gap-1'>
-              <img src="/public/assets/images/bookmark.png" alt="Logo" className="h-[14.5px] w-[14.5px]" />
+              <img src="/assets/images/bookmark.png" alt="Logo" className="h-[14.5px] w-[14.5px]" />
               <p>Bookmark</p>
             </div>
 
             <span className="hidden md:inline-block">Share:</span>
             {/* Facebook*/}
             <a href="#" className="text-gray-500 hover:text-blue-600">
-              <img src="/public/assets/images/newsfacebook.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+              <img src="/assets/images/newsfacebook.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
             </a>
             {/* Twitter */}
             <a href="#" className="text-gray-500 hover:text-blue-400">
-              <img src="/public/assets/images/newspin.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+              <img src="/assets/images/newspin.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
             </a>
             {/* YouTube */}
             <a href="#" className="text-gray-500 hover:text-red-600">
-              <img src="/public/assets/images/newstwitter.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+              <img src="/assets/images/newstwitter.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
             </a>
             {/* LinkedIn*/}
             <a href="#" className="text-gray-500 hover:text-indigo-600">
-              <img src="/public/assets/images/newswhatsapp.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
+              <img src="/assets/images/newswhatsapp.png" alt="Logo" className="h-[16.5px] w-[16.5px]" />
             </a>
             {/* Print/Share*/}
             {/* <a href="#" className="text-gray-500 hover:text-gray-900">
@@ -74,7 +74,7 @@ const ArticleSection: React.FC<ArticleSectionProps> = () => {
         {/*Article Image */}
         <div className="mb-6 rounded-lg overflow-hidden shadow-lg">
           <img
-            src="/public/assets/images/newsimg1.png" // Placeholder image
+            src="/assets/images/newsimg1.png" // Placeholder image
             alt="Two men in suits shaking hands"
             className="w-full h-[500px] object-cover"
             onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
