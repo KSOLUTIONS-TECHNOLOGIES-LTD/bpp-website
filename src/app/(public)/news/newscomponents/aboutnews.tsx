@@ -12,7 +12,7 @@ const Aboutnews: FC = () => {
           alt="Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute bg-blue-900/30 inset-0 bg-opacity-60" />
+        <div className="absolute bg-black/50 inset-0 bg-opacity-60" />
       </div>
 
       {/* Content */}

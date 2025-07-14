@@ -18,7 +18,7 @@ const BPPTrainingSection = () => {
         </div>
 
         {/* Right: Text */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 plus">
           <h2 className="text-2xl md:text-[45px] font-bold text-gray-900 mb-4">
             BPP Trainings
           </h2>
