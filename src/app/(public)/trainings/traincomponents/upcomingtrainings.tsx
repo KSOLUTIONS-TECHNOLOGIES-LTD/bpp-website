@@ -42,7 +42,7 @@ const trainings: TrainingCard[] = [
 
 const UpcomingTrainings = () => {
   return (
-    <section className="py-10 md:py-28 px-4 w-full mx-auto bg-white px-24 plus">
+    <section className="py-10 md:py-28 px-4 w-full mx-auto bg-white px-24 plus 2xl:max-w-7xl 2xl:mx-auto">
       <h2 className="text-center text-2xl md:text-[45px] font-semibold mb-8">Upcoming Trainings</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 px-6 md:px-16">
         {trainings.map((training, index) => (

@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 'use client';
 import { useState, useEffect } from 'react';
 // import Image from "next/image";
@@ -14,14 +14,14 @@ const slides = [
 	{
 		title: 'Contractor Registration',
 		description: 'Wish to register as a federal government contractor? You are one step away.',
-		image: '/assets/images/container-1.png',
+		image: '/assets/images/Container-1.png',
 		buttonText: 'Register',
 		selectorLabel: 'CONTRACT REGISTRATION'
 	},
 	{
 		title: 'Procurement Conversion Online Registration',
 		description: 'Are you a procurement officer? Update your profile now',
-		image: '/assets/images/container-2.png',
+		image: '/assets/images/Container-2.png',
 		buttonText: 'Start Here',
 		selectorLabel: 'PROCUREMENT OFFICE REGISTRATION'
 	},
@@ -29,7 +29,7 @@ const slides = [
 		title: 'NOCOPO',
 		description:
 			'Opening up Public Procurement in Nigeria through increased disclosure of procurements infromation.',
-		image: '/assets/images/container-1.png',
+		image: '/assets/images/Container-1.png',
 		buttonText: 'Click Here',
 		selectorLabel: 'CONTRACTING PORTAL'
 	}
@@ -58,9 +58,9 @@ export default function HeroSection() {
 	};
 
   return (
-    <section className="w-full bg-white px-4 sm:px-8 md:px-24 pt-[9rem] h-[96.5vh] plus">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-2">
-        <div className="w-full md:w-1/2">
+    <section className="w-full bg-white px-4 sm:px-8 md:px-24 pt-[9rem] pb-4 plus ">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-2 2xl:max-w-7xl 2xl:mx-auto ">
+        <div className="w-full md:w-1/2 max-w-7xl">
           {current === 0 ? (
             <div className="mb-6">
               <h1 className="text-3xl md:text-[50px] font-[600] text-black">

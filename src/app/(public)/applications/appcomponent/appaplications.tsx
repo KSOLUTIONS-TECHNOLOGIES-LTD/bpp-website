@@ -14,7 +14,7 @@ export default function AppApplications() {
   return (
     <section className="py-16 px-4 bg-white text-center plus">
       {/* Heading */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-2 max-w-2xl mx-auto mb-10">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 max-w-2xl mx-auto mb-10 xl:max-w-7xl">
         <input
           type="text"
           placeholder="Search for application |"

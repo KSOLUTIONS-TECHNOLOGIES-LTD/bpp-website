@@ -28,7 +28,7 @@ const PetitionForm = () => {
   };
 
   return (
-    <section className=" bg-white min-h-screen pt-28 md:pt-40 pb-16 px-4 flex flex-col items-center plus">
+    <section className=" bg-white min-h-screen pt-28 md:pt-40 pb-16 px-4 flex flex-col items-center plus ">
       <p className="text-sm text-green-500 uppercase tracking-widest font-medium text-center mb-2">
         Register with ease on our enhanced application
       </p>
@@ -38,7 +38,7 @@ const PetitionForm = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded-md p-8 max-w-3xl w-full space-y-2 border border-gray-200"
+        className="bg-white shadow-md rounded-md p-8 max-w-3xl w-full space-y-2 border border-gray-200 xl:max-w-7xl"
       >
         <p className="text-gray-700 font-[500] text-[17px]">Kindly fill the form and make your submission</p>
         <p className="text-red-500 text-[14px]">* <span className='text-gray-800'>Indicates required field</span></p>

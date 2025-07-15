@@ -8,7 +8,7 @@ import NorthEastIcon from '@mui/icons-material/NorthEast';
 const WelcomeSection = () => {
   return (
     <section className="bg-white py-16 px-4 md:px-24 plus">
-      <div className=" flex flex-col md:flex-row justify-center gap-2">
+      <div className=" flex flex-col md:flex-row justify-center gap-2 max-w-7xl 2xl:mx-auto">
         {/* Left Section */}
         <div className='w-full md:w-3/5'>
           <h2  className="text-[35px] md:text-[50px] font-[600] mb-4">Welcome to BPP</h2>

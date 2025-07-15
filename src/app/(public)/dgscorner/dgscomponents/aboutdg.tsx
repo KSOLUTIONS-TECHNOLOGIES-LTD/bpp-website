@@ -6,7 +6,7 @@ import React from 'react';
 const AboutDgSection = () => {
   return (
     <section className="pt-40 bg-white pb-16 px-4 md:px-24 plus">
-      <div className=" flex flex-col md:flex-row justify-center gap-2">
+      <div className=" flex flex-col md:flex-row justify-center gap-2 max-w-7xl 2xl:mx-auto">
         {/* Left Section */}
         <div className='w-full md:w-3/5'>
           <h2  className="text-[35px] md:text-[50px] font-[500] mb-4">DG'S Corner</h2>

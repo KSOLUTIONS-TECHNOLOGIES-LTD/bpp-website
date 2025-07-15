@@ -28,7 +28,7 @@ const newsItems = [
 const LatestInformation = () => {
   return (
     <section className="bg-white text-black py-10 md:py-16 px-4 md:px-16 plus">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto ">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-[24px] font-[700] tracking-widest text-[#444444] plus">
