@@ -33,7 +33,7 @@ export default function NewsSection() {
 
   return (
     <section className="py-16 px-4 md:px-10 bg-white w-full plus">
-      <h2 className="text-2xl md:text-[30px] font-semibold text-center mb-8">
+      <h2 className="text-2xl md:text-[30px] font-semibold text-center mb-8 max-w-7xl">
         Recent News and Publications from DG
       </h2>
 

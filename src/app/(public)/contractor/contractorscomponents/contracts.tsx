@@ -8,7 +8,7 @@ const ContractorSection: React.FC = () => {
   return (
     <section className="bg-gray-50 py-24 px-6 md:px-12 flex flex-col md:flex-row items-center justify-center gap-14">
       {/* Image Grid */}
-      <div className="grid grid-cols-2 gap-4 max-w-md">
+      <div className="grid grid-cols-2 gap-4 max-w-md xl:max-w-7xl">
         
         <div className='flex flex-col gap-6'>
         <div className="rounded-lg overflow-hidden">

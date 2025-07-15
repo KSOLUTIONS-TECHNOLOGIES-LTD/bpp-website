@@ -20,7 +20,7 @@ export default function BppApplications() {
         PROCESS FOR MOST OF HER PROCUREMENT PROCEDURES.
       </p>
 
-      {/* App Grid */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
         {apps.map((app, index) => (
           <div
@@ -29,9 +29,9 @@ export default function BppApplications() {
           >
             <p className="mt-2 text-[24px] font-[500] text-[#161C2D] mb-2">{app.title}</p>
 
-            {/* image Wrapper */}
+            
             <div className="relative w-full h-[200px] rounded-lg shadow overflow-hidden">
-              {/* Image  */}
+
               <img
                 src={app.image}
                 alt={app.title}

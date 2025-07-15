@@ -24,7 +24,7 @@ const purposes = [
 export default function BppPurpose() {
   return (
     <section className="w-full bg-white pt-24 pb-10 px-4 md:px-22 plus">
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between max-w-7xl 2xl:mx-auto">
         
         {/* Left Text */}
         <div className="w-full md:w-1/2">

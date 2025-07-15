@@ -1,6 +1,3 @@
-
-
-
 'use client';
 
 import { useState } from 'react';
@@ -101,23 +98,29 @@ export default function Navbar() {
             <div className="hidden md:flex space-x-6 items-center relative">
               {navItems.map((item, idx) => (
                 <div key={idx} className="relative group">
-                  <div
-                    onClick={() => toggleDropdown(item.label)}
-                    className={`text-[14px] font-[400] no-underline text-gray-900 hover:text-green-700 flex items-center space-x-1 cursor-pointer ${
-                      item.highlight ? 'relative z-10' : ''
-                    }`}
-                  >
-                    <span>{item.label.toUpperCase()}</span>
-                    {item.external && <NorthEastIcon className="text-xs" fontSize="inherit" />}
-                    {item.submenu && <KeyboardArrowDownIcon className="text-gray-600" />}
-                  </div>
+                  {!item.submenu ? (
+                    <Link
+                      to={item.href}
+                      className="text-[14px] font-[400] no-underline text-gray-900 hover:text-green-700 flex items-center space-x-1"
+                    >
+                      <span>{item.label.toUpperCase()}</span>
+                      {item.external && <NorthEastIcon className="text-xs" fontSize="inherit" />}
+                    </Link>
+                  ) : (
+                    <div
+                      className={`text-[14px] font-[400] no-underline text-gray-900 hover:text-green-700 flex items-center space-x-1 cursor-pointer ${
+                        item.highlight ? 'relative z-10' : ''
+                      }`}
+                    >
+                      <span>{item.label.toUpperCase()}</span>
+                      {item.external && <NorthEastIcon className="text-xs" fontSize="inherit" />}
+                      <KeyboardArrowDownIcon className="text-gray-600" />
+                    </div>
+                  )}
 
                   {item.submenu && item.items && (
                     <div
-                      className={`
-                        absolute left-0 w-56 bg-white shadow-md rounded z-20 overflow-hidden transition-all duration-200
-                        ${activeDropdown === item.label ? 'block' : 'hidden'} group-hover:block
-                      `}
+                      className="absolute left-0 w-56 bg-white shadow-md rounded z-20 overflow-hidden transition-all duration-200 hidden group-hover:block"
                       style={{ top: '100%' }}
                     >
                       <ul className="text-sm text-gray-800">

@@ -6,7 +6,7 @@ const BPPTrainingSection = () => {
   return (
     <section className="bg-[#f8fbff] py-16 px-4 md:px-20">
       <div className="max-w-5xl flex flex-col md:flex-row justify-center items-center mx-auto">
-        {/* Left: Image */}
+        
         <div className="w-full md:w-1/2">
           <img
             src="/assets/images/trainingimg.png" 
@@ -17,7 +17,7 @@ const BPPTrainingSection = () => {
           />
         </div>
 
-        {/* Right: Text */}
+        
         <div className="w-full md:w-1/2 plus">
           <h2 className="text-2xl md:text-[45px] font-bold text-gray-900 mb-4">
             BPP Trainings
