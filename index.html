@@ -1,157 +1,149 @@
-<!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <meta charset='utf-8'>
-        <meta name='description' content='Welcome to the
-        Bureau of Public Procurement'>
-        <!-- <meta name='keywords'
-              content='React,Redux,Material UI Next,Material,Material Design,Google Material Design,HTML,CSS,Firebase,Authentication,Material Redux Theme,Material Redux Template'> -->
-        <meta name='author' content='Withinpixels'>
-        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no'>
-        <meta name='theme-color' content='#000000'>
-        <base href='/'>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Official website of the Bureau of Public Procurement (BPP) in Nigeria. Regulating public procurement for transparency, accountability, and value for money across Federal Government entities. Access guidelines, tenders, and policies."
+    />
+    <meta
+      name="keywords"
+      content="BPP, Bureau of Public Procurement, Nigeria, public procurement, government contracts, tenders, bidding, procurement policies, public funds, accountability, transparency, Federal Government, procurement guidelines, NOCOPO, Public Procurement Act 2007"
+    />
 
-        <!--
-          manifest.json provides metadata used when your web app is added to the
-          homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-        -->
-        <link rel='manifest' href='/manifest.json'>
-        <!-- <link rel='shortcut icon' href='/favicon.ico'> -->
+    <meta name="author" content="Bureau of Public Procurement (BPP) Nigeria" />
+    <link rel="canonical" href="https://www.bpp.gov.ng/" />
+    <meta
+      property="og:title"
+      content="Bureau of Public Procurement (BPP) Nigeria - Official Website"
+    />
+    <meta
+      property="og:description"
+      content="Official website of the Bureau of Public Procurement (BPP) in Nigeria. Regulating public procurement for transparency, accountability, and value for money across Federal Government entities."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.bpp.gov.ng/" />
+    <meta
+      property="og:image"
+      content="https://www.bpp.gov.ng/assets/images/bpp-social-share.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Bureau of Public Procurement (BPP) Nigeria logo"
+    />
 
-        <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <base href="/" />
 
-        <!--        You can choose main icon from variety of the material ui icon fonts-->
-        <link href='/public/assets/images/logo.png' rel='stylesheet'>
-        <!--        <link href="/assets/fonts/material-design-icons/MaterialIcons.css" rel="stylesheet">-->
-        <!--        <link href="/assets/fonts/material-design-icons/MaterialIconsRound.css" rel="stylesheet">-->
-        <!--        <link href="/assets/fonts/material-design-icons/MaterialIconsSharp.css" rel="stylesheet">-->
-        <!--        <link href="/assets/fonts/material-design-icons/MaterialIconsTwoTone.css" rel="stylesheet">-->
+    <link rel="manifest" href="/manifest.json" />
+    <link href="/assets/images/logo.png" rel="stylesheet" />
 
-        <link href='/assets/fonts/inter/inter.css' rel='stylesheet'>
-        <link href='/assets/fonts/meteocons/style.css' rel='stylesheet'>
+    <link href="/assets/fonts/inter/inter.css" rel="stylesheet" />
+    <link href="/assets/fonts/meteocons/style.css" rel="stylesheet" />
 
-        <link href='/assets/styles/prism.css' rel='stylesheet'>
+    <link href="/assets/styles/prism.css" rel="stylesheet" />
 
-        <noscript id='emotion-insertion-point'></noscript>
-        <!--
-          Notice the use of  in the tags above.
-          It will be replaced with the URL of the public folder during the build.
-          Only files inside the public folder can be referenced from the HTML.
+    <noscript id="emotion-insertion-point"></noscript>
 
-          Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
-          work correctly both with client-side routing and a non-root public URL.
-          Learn how to configure a non-root public URL by running npm run build.
-        -->
-        <title>Bureau of Public Procurement</title>
+    <title>Bureau of Public Procurement (BPP) Nigeria - Official Website</title>
 
-        <!-- FUSE Splash Screen CSS -->
-        <style>
-            body #fuse-splash-screen {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #121212;
-                color: #E0E0E0;
-                z-index: 999999;
-                pointer-events: none;
-                opacity: 1;
-                visibility: visible;
-                transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
-            }
+    <style>
+      body #fuse-splash-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #121212;
+        color: #e0e0e0;
+        z-index: 999999;
+        pointer-events: none;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
 
-            body #fuse-splash-screen img {
-                width: 120px;
-                max-width: 120px;
-            }
+      body #fuse-splash-screen img {
+        width: 120px;
+        max-width: 120px;
+      }
 
-            #spinner {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-top: 40px;
-                width: 56px;
-            }
+      #spinner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 56px;
+      }
 
-            #spinner > div {
-                width: 12px;
-                height: 12px;
-                background-color: #00A4EF;
-                border-radius: 100%;
-                display: inline-block;
-                -webkit-animation: fuse-bouncedelay 1s infinite ease-in-out both;
-                animation: fuse-bouncedelay 1s infinite ease-in-out both;
-            }
+      #spinner > div {
+        width: 12px;
+        height: 12px;
+        background-color: #00a4ef;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: fuse-bouncedelay 1s infinite ease-in-out both;
+        animation: fuse-bouncedelay 1s infinite ease-in-out both;
+      }
 
-            #spinner .bounce1 {
-                -webkit-animation-delay: -0.32s;
-                animation-delay: -0.32s;
-            }
+      #spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
 
-           #spinner .bounce2 {
-                -webkit-animation-delay: -0.16s;
-                animation-delay: -0.16s;
-            }
+      #spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
 
-            @-webkit-keyframes fuse-bouncedelay {
-                0%, 80%, 100% {
-                    -webkit-transform: scale(0)
-                }
-                40% {
-                    -webkit-transform: scale(1.0)
-                }
-            }
+      @-webkit-keyframes fuse-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+        }
+      }
 
-            @keyframes fuse-bouncedelay {
-                0%, 80%, 100% {
-                    -webkit-transform: scale(0);
-                    transform: scale(0);
-                }
-                40% {
-                    -webkit-transform: scale(1.0);
-                    transform: scale(1.0);
-                }
-            }
+      @keyframes fuse-bouncedelay {
+        0%,
+        80%,
+        100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body id="root">
+    <noscript> You need to enable JavaScript to run this app. </noscript>
 
-
-        </style>
-        <!-- / FUSE Splash Screen CSS -->
-    </head>
-    <body id="root">
-
-    <noscript>
-        You need to enable JavaScript to run this app.
-    </noscript>
-
-    <div id='app' class='flex'>
-        <!-- FUSE Splash Screen -->
-        <div id='fuse-splash-screen'>
-            <div class='logo'>
-                <img width='128' src='/assets/images/logo.png' alt='logo'>
-            </div>
-            <div id='spinner'>
-                <div class='bounce1'></div>
-                <div class='bounce2'></div>
-                <div class='bounce3'></div>
-            </div>
+    <div id="app" class="flex">
+      <div id="fuse-splash-screen">
+        <div class="logo">
+          <img width="128" src="/assets/images/logo.png" alt="logo" />
         </div>
-        <!-- / FUSE Splash Screen -->
+        <div id="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
     </div>
     <script type="module" src="/src/index.tsx"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run npm start or yarn start.
-      To create a production bundle, use npm run build or yarn build.
-    -->
-    </body>
+  </body>
 </html>

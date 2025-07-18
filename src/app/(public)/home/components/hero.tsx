@@ -42,7 +42,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000); 
+    }, 4000); // Faster transitions
     return () => clearInterval(interval);
   }, []);
 
@@ -117,7 +117,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      
+      {/* Selector */}
       <div className="flex items-center justify-center mt-10 gap-3">
         <button
           onClick={goToPrevious}
