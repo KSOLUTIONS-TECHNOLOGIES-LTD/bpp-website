@@ -1,34 +1,70 @@
 'use client';
 
-// import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const BPPTrainingSection = () => {
   return (
-    <section className="bg-[#f8fbff] py-16 px-4 md:px-20">
-      <div className="max-w-5xl flex flex-col md:flex-row justify-center items-center mx-auto">
-        
-        <div className="w-full md:w-1/2">
+    <section className="bg-[#f8fbff] py-16 px-4 md:px-20 overflow-hidden">
+      <div className="max-w-5xl flex flex-col md:flex-row justify-center items-center mx-auto gap-10">
+       
+        <motion.div
+          className="w-full md:w-1/2"
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          viewport={{ once: true }}
+        >
           <img
-            src="/assets/images/trainingimg.png" 
+            src="/assets/images/trainingimg.png"
             alt="BPP Training"
-            // width={600}
-            // height={500}
-            className="rounded-lg object-cover h-fit"
+            className="rounded-lg object-cover h-fit shadow-xl"
           />
-        </div>
+        </motion.div>
 
         
-        <div className="w-full md:w-1/2 plus">
-          <h2 className="text-2xl md:text-[45px] font-bold text-gray-900 mb-4">
+        <motion.div
+          className="w-full md:w-1/2 plus"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.3
+              }
+            }
+          }}
+        >
+          <motion.h2
+            className="text-2xl md:text-[45px] font-bold text-gray-900 mb-4"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             BPP Trainings
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4 text-[16px]">
-            To provide skilled workforce and professionals for public procurement management through training, research, and development.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-[16px]">
-            We are creating a transparent, dynamic and world-class procurement workforce across the nation.
-          </p>
-        </div>
+          </motion.h2>
+
+          <motion.p
+            className="text-gray-700 leading-relaxed mb-4 text-[16px]"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            To provide skilled workforce and professionals for public procurement
+            management through training, research, and development.
+          </motion.p>
+
+          <motion.p
+            className="text-gray-700 leading-relaxed text-[16px]"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1 }}
+          >
+            We are creating a transparent, dynamic and world-class procurement
+            workforce across the nation.
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   );

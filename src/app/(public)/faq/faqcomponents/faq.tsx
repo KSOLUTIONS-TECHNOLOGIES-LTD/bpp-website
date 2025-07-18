@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
@@ -57,7 +58,12 @@ export default function Faq() {
   };
 
   return (
-    <section className="pt-44 pb-16 px-4 md:px-10 w-full mx-auto bg-white plus">
+    <motion.section
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="pt-44 pb-16 px-4 md:px-10 w-full mx-auto bg-white plus"
+    >
       <h2 className="text-center text-3xl md:text-[38px] font-bold text-gray-900">
         FREQUENTLY ASKED QUESTIONS
       </h2>
@@ -67,9 +73,13 @@ export default function Faq() {
 
       <div className="mt-10 md:mt-14 space-y-4 max-w-xl mx-auto">
         {faqs.map((faq, index) => (
-          <div
+          <motion.div
             key={index}
-            className="border border-gray-200 rounded-lg px-4 py-3 transition-all bg-white"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="border border-gray-200 rounded-lg px-4 py-3 transition-all bg-white shadow-sm"
           >
             <button
               onClick={() => toggleFaq(index)}
@@ -84,10 +94,22 @@ export default function Faq() {
                 <KeyboardArrowRightIcon className="text-gray-600" />
               )}
             </button>
-            {openIndex === index && (
-              <p className="text-[14px] font-[400] text-gray-600 mt-3 md:leading-[130%]">{faq.answer}</p>
-            )}
-          </div>
+
+            <AnimatePresence>
+              {openIndex === index && (
+                <motion.p
+                  key="answer"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="text-[14px] font-[400] text-gray-600 mt-3 md:leading-[130%] overflow-hidden"
+                >
+                  {faq.answer}
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </motion.div>
         ))}
       </div>
 
@@ -97,6 +119,6 @@ export default function Faq() {
           Contact our support now
         </a>
       </p>
-    </section>
+    </motion.section>
   );
 }

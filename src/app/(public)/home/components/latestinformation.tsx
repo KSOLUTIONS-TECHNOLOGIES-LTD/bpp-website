@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const newsItems = [
   {
@@ -28,9 +29,15 @@ const newsItems = [
 const LatestInformation = () => {
   return (
     <section className="bg-white text-black py-10 md:py-16 px-4 md:px-16 plus">
-      <div className="max-w-7xl mx-auto ">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-6">
+      <div className="max-w-7xl mx-auto">
+        
+        <motion.div
+          className="flex justify-between items-center mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-[24px] font-[700] tracking-widest text-[#444444] plus">
             LATEST INFORMATION
           </h2>
@@ -40,20 +47,30 @@ const LatestInformation = () => {
           >
             VIEW ALL
           </a>
-        </div>
+        </motion.div>
 
-        {/* Cards Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {newsItems.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="border border-gray-400 rounded-md p-4 transition"
+              className="border border-gray-300 rounded-md p-4 shadow-sm bg-white"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: 'easeOut',
+                delay: index * 0.15,
+              }}
+              viewport={{ once: true }}
             >
               <p className="text-[16px] text-[#1C3F3A] mb-4 leading-[24px] font-[400]">
                 {item.title}
               </p>
-              <p className="text-[12px] text-[#647B78] font-[400]">{item.date}</p>
-            </div>
+              <p className="text-[12px] text-[#647B78] font-[400]">
+                {item.date}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>
