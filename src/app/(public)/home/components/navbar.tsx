@@ -27,10 +27,10 @@ export default function Navbar() {
       items: [
         { label: 'Background', href: '/who-are-we' },
         { label: 'Core Objectives', href: '/who-we-are/mission-vision' },
-        { label: 'DGS Corner', href: '/dgscorner' },
+        { label: "DG's Corner", href: '/dgscorner' },
         { label: 'Vision', href: '/who-we-are/structure' },
         { label: 'Mission', href: '/who-we-are/structure' },
-        { label: 'Function of the Bureau', href: '/FunctionsOfTheBureau' },
+        { label: 'Functions of the Bureau of Public Procurement', href: '/FunctionsOfTheBureau' },
       ]
     },
     {
@@ -39,9 +39,9 @@ export default function Navbar() {
       submenu: true,
       items: [
         { label: 'All Applications', href: '/applications' },
-        { label: 'Contractor Consultant Service Provider', href: '/contractor' },
-        { label: 'Procurement Officer Conversion Registration', href: '/applications/status' },
-        { label: 'Procurement Officer Management Database', href: '/applications/renewal' },
+        { label: 'Contractors, Consultants and Services Providers Registration', href: '/contractor' },
+        { label: 'Procurement Officers Conversion Registration', href: '/applications/status' },
+        { label: 'Procurement Officers Management System', href: '/applications/renewal' },
         { label: 'Nigeria Open Contracting Portal', href: '/applications/renewal' },
         { label: 'Price Checker Portal', href: '/applications/renewal' },
         { label: 'Submission Portal', href: '/applications/renewal' },
