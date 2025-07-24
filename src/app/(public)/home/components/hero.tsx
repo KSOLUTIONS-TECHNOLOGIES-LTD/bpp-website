@@ -24,7 +24,7 @@ const slides = [
     description: 'Are you a procurement officer? Update your profile now',
     image: '/assets/images/Container-2.png',
     buttonText: 'Start Here',
-    selectorLabel: 'PROCUREMENT OFFICE REGISTRATION',
+    selectorLabel: 'PROCUREMENT OFFICERS REGISTRATION',
   },
   {
     title: 'NOCOPO',
