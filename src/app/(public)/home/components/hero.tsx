@@ -111,7 +111,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1.05 }}
               transition={{ duration: 0.6 }}
-              className="w-full h-full object-cover rounded-md shadow-lg"
+              className="w-full h-full object-cover rounded-md"
             />
           </AnimatePresence>
         </div>

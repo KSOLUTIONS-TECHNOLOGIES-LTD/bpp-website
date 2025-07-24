@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 
 const apps = [
-  { title: 'CCSP', image: '/assets/images/bppimg.png' },
-  { title: 'POCR', image: '/assets/images/bppimg.png' },
-  { title: 'POMS', image: '/assets/images/bppimg.png' },
-  { title: 'NOCOPO', image: '/assets/images/bppimg.png' },
-  { title: 'PRICE CHECKER', image: '/assets/images/bppimg.png' },
-  { title: 'CCSP', image: '/assets/images/bppimg.png' },
+  { title: 'CCSP', image: '/assets/images/ccsps.jpeg' },
+  { title: 'POCR', image: '/assets/images/pocrs.jpeg' },
+  { title: 'POMS', image: '/assets/images/pom.jpeg' },
+  { title: 'NOCOPO', image: '/assets/images/nocopos.jpeg' },
+  { title: 'PRICE CHECKER', image: '/assets/images/ccsps.jpeg' },
+  { title: 'CCSP', image: '/assets/images/pricechecker.jpeg' },
 ];
 
 export default function BppApplications() {

@@ -52,7 +52,7 @@ const AboutDgSection = () => {
           viewport={{ once: true }}
         >
           <motion.img
-            src="/assets/images/DG.png"
+            src="/assets/images/newdg.jpeg"
             alt="Dr. Adebowale A. Adedokun"
             width={300}
             height={400}

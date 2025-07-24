@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 // import Link from 'next/link';
+import { Link } from 'react-router';
 
 const WelcomeSection = () => {
   return (
@@ -66,12 +67,12 @@ const WelcomeSection = () => {
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            {/* <Link href="/dgscorner" className="no-underline"> */}
+            <Link to="/dgscorner" className="no-underline">
               <button className="mt-4 bg-[#108A00] hover:bg-green-700 text-white px-8 py-4 rounded shadow transition text-[11px] font-[600] plus flex flex-row gap-2">
                 ACCESS DG'S CORNER
                 <NorthEastIcon fontSize="small" className="text-sm" />
               </button>
-            {/* </Link> */}
+            </Link>
           </motion.div>
         </div>
 
@@ -84,7 +85,7 @@ const WelcomeSection = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           <img
-            src="/assets/images/DG.png"
+            src="/assets/images/newdg.jpeg"
             alt="Dr. Adebowale A. Adedokun"
             width={300}
             height={400}
