@@ -40,7 +40,7 @@ export default function Navbar() {
       items: [
         { label: 'All Applications', href: '/applications' },
         { label: 'Contractors, Consultants and Services Providers Registration', href: '/contractor' },
-        { label: 'Procurement Officers Conversion Registration', href: '/applications/status' },
+        { label: 'Procurement Officer Conversion Registration', href: '/applications/status' },
         { label: 'Procurement Officers Management System', href: '/applications/renewal' },
         { label: 'Nigeria Open Contracting Portal', href: '/applications/renewal' },
         { label: 'Price Checker Portal', href: '/applications/renewal' },
